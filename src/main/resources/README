@@ -1,0 +1,30 @@
+# 说明：
+
+
+- 关于本项目
+1、使用 SpringBoot 技术实现 CRM 后台系统管理，实现技术改造
+2、由 CRM -> spring-boot-crm 的改造过程
+    1）构建 Spring-Boot 项目 spring-boot-crm，maven 的 quickstart
+    2）pom.xml 依赖配置,主要区别：parent 依赖
+    3）拷贝项目核心业务源代码，拷贝静态文件
+    4）application.properties 文件配置,主要有
+        server.port/mybatis/pagehelper/freemaker/datasource/
+    5）拦截器配置，添加 config.MvcConfig.java
+        继承、重写
+    6）添加 Starter.java 项目启动
+        在类名上，添加两大注解
+    7）启动测试
+    8）事务控制 使用声明式事务（注解）对控制方法事务，
+
+- 前后区别
+    1）没有了 Webapp 目录，静态文件放在 resources 里,简化了配置
+    2）核心业务逻辑代码没有变化，这是项目的核心
+    3）删除了 test 目录，会对代码有干扰
+
+- TODO
+- 关于 CRM 项目
+1、项目介绍
+
+2、项目实现
+
+3、项目难点
